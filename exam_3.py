@@ -81,8 +81,8 @@ class Animal:
 
 
 class Cat(Animal):
-    def scratch():
-        print()
+    def scratch(self):
+        print("Царапать мебель")
 
     def make_a_sound(self):
         print("мяу")
@@ -91,11 +91,16 @@ class Dog(Animal):
     def make_a_sound(self):
         print("гав")
 
+    def dig(self):
+        print("Рыть землю")
+
 
 
 animal = Animal()
 animal.make_a_sound()
 cat = Cat()
 cat.make_a_sound()
+cat.scratch()
 dog = Dog()
 dog.make_a_sound()
+dog.dig()
